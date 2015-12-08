@@ -1,0 +1,11 @@
+BEGIN:VCARD
+VERSION:4.0
+N:Doe;John;;;
+FN:John doe
+ORG:Mosso production.
+TITLE:The default guy
+TEL;TYPE=work,voice;VALUE=uri:tel:+11115551212
+TEL;TYPE=home,voice;VALUE=uri:tel:+14045551212
+EMAIL:john.doe@gmail.com
+REV:20120424T195243Z
+END:VCARD

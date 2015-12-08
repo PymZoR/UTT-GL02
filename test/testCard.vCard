@@ -1,0 +1,12 @@
+BEGIN:VCARD
+VERSION:4.0
+N:Gump;Forrest;;;
+FN:Forrest Gump
+ORG:Bubba Gump Shrimp Co.
+TITLE:Shrimp ManXXX
+TEL;TYPE=work,voice;VALUE=uri:tel:+11115551212
+TEL;TYPE=home,voice;VALUE=uri:tel:+14045551212
+TEL;TYPE=home,voice;VALUE=uri:tel:+14045551215
+EMAIL:forrestgump@example.com
+REV:20080424T195243Z
+END:VCARD
