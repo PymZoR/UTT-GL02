@@ -104,7 +104,7 @@ inquirer.prompt(question, function (answer) {
                         }
                     });
 
-                    return ul.toCSV();
+                    return 'Contacts de:;' + db.table('owner')[0] + ';\n' + ul.toCSV();
                 })
                 .then(function (csv) {
                     return fs.writeFileAsync(answer.path, csv);
@@ -146,8 +146,16 @@ inquirer.prompt(question, function (answer) {
         inquirer.prompt(questions, function (answer) {
             var ul;
 
-            UserList
-                .fromDB(db)
+            db
+                .open()
+                .then(function () {
+                    // Add owner to db
+                    db.table('owner').push(answer.name);
+                    return db.save();
+                })
+                .then(function () {
+                    return UserList.fromDB(db);
+                })
                 .then(function (ul_) {
                     ul = ul_;
 
