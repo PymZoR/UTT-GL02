@@ -187,6 +187,10 @@ inquirer.prompt(question, function (answer) {
                         ul.add(user);
                         saveUL(db, ul);
                     }
+                })
+                .catch(function (err) {
+                    console.log('Erreur lors de l\'analyse du fichier: ');
+                    console.log(err);
                 });
         });
     }
