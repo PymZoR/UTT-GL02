@@ -19,7 +19,7 @@ $ npm start
 ```
 
 ## About
-School project for a software engineering course at UTT (Université de Technology de Troyes), France.
+School project for a software engineering course at UTT (Université de Technologie de Troyes), France.
 
 Contributors:
 -  [Lemarié Léo](https://github.com/leuks)
